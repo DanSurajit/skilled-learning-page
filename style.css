@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@300;400;600&family=Plus+Jakarta+Sans:wght@500;700;800&family=Poppins:wght@300;400;500;600&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans";
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+.top-section-mobile {
+  display: none;
+}
+
+.btn {
+  width: fit-content;
+  border: 0;
+  color: #fff;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  position: absolute;
+  right: 16%;
+  top: 2rem;
+  padding: 0.87rem 2rem;
+  border-radius: 1.75rem;
+  background: #13183f;
+}
+
+.btn-secondary:hover {
+  background: #666ca3;
+}
+
+.top-section {
+  display: flex;
+  align-items: stretch;
+}
+
+.logo-summary {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-summary * {
+  margin-left: 10rem;
+}
+
+.logo-summary .logo {
+  background: url("assets/logo-dark.svg");
+  width: 6.948rem;
+  height: 1.73025rem;
+  margin-top: 2rem;
+}
+
+.logo-summary .logo-summary-title {
+  color: #13183f;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-top: 11.6rem;
+}
+
+.logo-summary .logo-summary-description {
+  color: #83869a;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.75rem;
+  margin-top: 1.81rem;
+  margin-bottom: 2.5rem;
+}
+
+.logo-summary .btn-primary {
+  border-radius: 1.96875rem;
+  background: var(
+    --gradient-1,
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
+  );
+  padding: 1.19rem 2rem;
+}
+
+.btn-primary:hover {
+  background: var(
+    --gradient-1-hover,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
+  );
+}
+
+.hero-section .hero-img {
+  background: url("assets/image-hero-desktop.webp");
+  width: 100%;
+  min-height: 65rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 13rem;
+  background-position-y: -5rem;
+}
+
+.logo-summary,
+.hero-section {
+  flex: 1;
+}
+
+.hero-section {
+  height: 36rem;
+}
+
+.course-container {
+  background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+  padding: 6.87rem 10.31rem;
+  margin-top: 6.88rem;
+}
+
+.courses {
+  display: grid;
+  gap: 5rem 1.88rem;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.course {
+  display: inline-grid;
+  background-color: #fff;
+  padding: 4rem 2rem 2.5rem;
+  position: relative;
+}
+
+.course .course-logo {
+  position: absolute;
+  top: -2rem;
+  left: 2rem;
+}
+
+.course .course-title {
+  color: #13183f;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.course .course-description {
+  color: #83869a;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.75rem;
+  margin: 1.5rem 0;
+}
+
+.course > a {
+  color: #f74780;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+.course > a:hover {
+  color: #ffa7c3;
+  text-decoration: none;
+}
+
+.courses .course-popular {
+  border-radius: 0.9375rem;
+  background: var(
+    --gradient-1,
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 2.5rem;
+  padding: 4rem 2rem 8rem;
+}
+
+footer {
+  padding: 0.92rem 10rem;
+  background: #13183f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .footer-logo {
+  background: url(assets/logo-light.svg);
+  width: 6.948rem;
+  height: 1.73025rem;
+}
+
+footer .btn-footer {
+  padding: 0.87rem 1.94rem;
+  border-radius: 1.75rem;
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+}
+
+footer .btn-footer:hover {
+  background: var(
+    --gradient-2-hover,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    linear-gradient(180deg, #4851ff 0%, #f02aa6 100%)
+  );
+}
+
+@media screen and (max-width: 768px) {
+  .top-section-mobile {
+    display: none;
+  }
+
+  .logo-summary .logo {
+    width: 5.56rem;
+    height: 2.18rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 1.7rem;
+  }
+
+  .logo-summary * {
+    margin-left: 2.44rem;
+    flex: 0.8;
+  }
+
+  .logo-summary .logo-summary-title {
+    font-size: 2.4rem;
+  }
+
+  .logo-summary .logo-summary-description {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.625rem;
+  }
+
+  .btn-secondary {
+    border-radius: 1.96875rem;
+    padding: 0.94rem 2.31rem 0.94rem 2.37rem;
+  }
+
+  .hero-section {
+    flex: 1;
+  }
+
+  .hero-section .hero-img {
+    background: url("assets/image-hero-tablet.webp");
+    min-height: 47rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -4rem;
+  }
+
+  .course-container {
+    padding: 1.5rem 2.5rem 5.37rem 2.44rem;
+    margin-top: 9.88rem;
+  }
+
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .courses .course-popular {
+    font-size: 1.5rem;
+  }
+
+  .courses .course {
+    padding: 3.5rem 1.37rem 2rem 2rem;
+  }
+
+  .course .course-title {
+    font-size: 1.25rem;
+  }
+
+  .course .course-description {
+    font-size: 1rem;
+  }
+
+  footer {
+    padding: 2.69rem 2.44rem 2.25rem 2.5rem;
+  }
+
+  footer .footer-logo {
+    width: 6.98rem;
+    height: 2.18rem;
+    background-repeat: no-repeat;
+  }
+
+  footer .btn-footer {
+    padding: 0.56rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .top-section {
+    display: none;
+  }
+
+  .top-section-mobile {
+    display: flex;
+    padding: 1.37rem 1rem;
+    flex-direction: column;
+  }
+
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.81rem;
+  }
+
+  .mobile-nav-logo {
+    background: url("assets/logo-dark.svg");
+    width: 5.56rem;
+    height: 2.18rem;
+    background-repeat: no-repeat;
+    padding-right: 1.5rem;
+  }
+
+  .btn-secondary {
+    font-size: 1rem;
+    position: static;
+    padding: 0.56rem 1.5rem 0.69rem 1.5rem;
+  }
+
+  .top-section-mobile .logo-summary-title-mobile {
+    color: #13183f;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 1.63rem;
+  }
+
+  .top-section-mobile .logo-summary-description-mobile {
+    color: #83869a;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.625rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-primary {
+    border-radius: 1.96875rem;
+    background: var(
+      --gradient-1,
+      linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
+    );
+    padding: 0.94rem 2.31rem;
+  }
+
+  .hero-img-mobile {
+    background: url("assets/image-hero-mobile.webp");
+    min-height: 20rem;
+    background-repeat: no-repeat;
+    background-position-x: -2.5rem;
+    margin-top: 4.5rem;
+  }
+
+  .courses .course-popular {
+    padding: 1.5rem 1.81rem 2rem 1.75rem;
+    font-size: 1.5rem;
+  }
+
+  .courses {
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 10rem repeat(5, 1fr) ;
+    gap: 2.5rem;
+  }
+
+  footer {
+    padding: 2.69rem 1rem 2.25rem 1rem;
+}
+
+}
